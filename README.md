@@ -15,7 +15,7 @@ truffle init
 
 truffle compile
 
-# put on blockchain
+# put on blockchain, Ganache must be running
 
 truffle migrate
 
@@ -39,7 +39,7 @@ instance.getMessage()
 
 yarn install yarn upgrade node yarn add web3
 
-# before each run, copy Auction.json to static folder and address of account from Ganache
+# before each run, copy build/contracts/Auction.json to static folder and address of account from Ganache
 
 # Metamask
 
@@ -52,3 +52,5 @@ pencil among know sort gadget radar family volume pudding grit impulse artefact
 # Metamask shortcut
 
 ALT + SHIFT + M
+
+# Import account from Ganache to Metamask using Private Key, f.i. and Click Connect..Account must be connecte
