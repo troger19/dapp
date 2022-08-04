@@ -1,7 +1,9 @@
 # 1. blockchain Etherum DAPP
 
-/contracts Solidity projects /migrations truffle migration scripts /react_app1 React Web3 frontend truffle-config.js
-settings for Ganache network
+/contracts Solidity projects 
+/migrations truffle migration scripts 
+/react_app1 React Web3 frontend 
+truffle-config.js settings for Ganache network
 
 # solidity docs
 
