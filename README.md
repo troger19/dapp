@@ -51,4 +51,4 @@ pencil among know sort gadget radar family volume pudding grit impulse artefact
 
 # Metamask shortcut
 
-ALT + SHIFT + M ahoj
+ALT + SHIFT + M
