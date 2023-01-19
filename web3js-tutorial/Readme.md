@@ -2,6 +2,17 @@ npm init -v
 
 install web3js :  `npm install --save web3` 
 
+## Interact with blockchain using browser
+Open index.html in Chrome browser and write commands to Chrome developer console
+
+`Web3`
+
+`let web3 = new Web3(new Web3.providers.HttpProvider("HTTP://127.0.0.1:7545"));`
+
+`web3.eth.getAccounts().then(console.log);`
+
+`web3.eth.getBalance("0xecB1e902611396F717F25cC438b51BA549102CA2").then(function(result){console.log(web3.utils.fromWei(result,"ether"));})`
+
 ## Interact with Blockchain from Node terminal
 
 run Node:  `node` 
@@ -12,7 +23,8 @@ Connect to Ganache :  `let web3 = new Web3(new Web3.providers.HttpProvider("HTTP
 
 Get balance account :  `web3.eth.getBalance("0xF2443019A773C23B9e51F94ed15C747753f9C731").then(console.log);`
 
-Convert wei into ether :  `web3.eth.getBalance("0xF2443019A773C23B9e51F94ed15C747753f9C731").then(function(result){console.log(web3.utils.fromWei(result,"ether"));})`
+Convert wei into ether :  `web3.eth.getBalance("0xF2443019A773C23B9e51F94ed15C747753f9C731")
+.then(function(result){console.log(web3.utils.fromWei(result,"ether"));})`
 
 Transfer ether from one account to another: 
 `web3.eth.sendTransaction({from:"0xF2443019A773C23B9e51F94ed15C747753f9C731",to:"0xdA78D6469808cDE86020DDcAD297b3233C7E68eB",value:web3.utils.toWei("5","ether")});`
@@ -62,3 +74,12 @@ use the same command in index.html in Chrome console
 `let web3 = new Web3(new Web3.providers.HttpProvider("HTTP://127.0.0.1:7545"));`
 
 list Ganache accounts `web3.eth.getAccounts().then(console.log);`
+
+## ABI
+Install dependencies for
+`npm install solc web3`
+
+# Creating wallet
+address: `0xecB1e902611396F717F25cC438b51BA549102CA2`
+
+privateKey: `0xe72ae5706df50a08a085216058aa43d51ec9eda11513f7abbbfe43b45cc9d229`
