@@ -21,9 +21,9 @@ Import Web3:  `let Web3 = require("web3");`
 
 Connect to Ganache :  `let web3 = new Web3(new Web3.providers.HttpProvider("HTTP://127.0.0.1:7545"));`
 
-Get balance account :  `web3.eth.getBalance("0xF2443019A773C23B9e51F94ed15C747753f9C731").then(console.log);`
+Get balance account :  `web3.eth.getBalance("0xecB1e902611396F717F25cC438b51BA549102CA2").then(console.log);`
 
-Convert wei into ether :  `web3.eth.getBalance("0xF2443019A773C23B9e51F94ed15C747753f9C731")
+Convert wei into ether :  `web3.eth.getBalance("0xecB1e902611396F717F25cC438b51BA549102CA2")
 .then(function(result){console.log(web3.utils.fromWei(result,"ether"));})`
 
 Transfer ether from one account to another: 
@@ -83,3 +83,14 @@ Install dependencies for
 address: `0xecB1e902611396F717F25cC438b51BA549102CA2`
 
 privateKey: `0xe72ae5706df50a08a085216058aa43d51ec9eda11513f7abbbfe43b45cc9d229`
+
+superapp test account: `0x9FE7B745a8dEb5b71e8F0C0B1E07cA516eaC9b96`
+
+
+
+Send transaction
+web3.eth.accounts.signTransaction({to: '0x9FE7B745a8dEb5b71e8F0C0B1E07cA516eaC9b96',value: '1',gas: 2000000}, '0xe72ae5706df50a08a085216058aa43d51ec9eda11513f7abbbfe43b45cc9d229').then(console.log);
+1.4585
+MATIC
+
+mali sme 0.73
